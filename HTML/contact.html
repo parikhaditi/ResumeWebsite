@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bellefair' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="/Media/imageedit_7_3425080704.ico" type="image/x-icon" />
+    <style>
+        article {
+            margin: 30px;
+            padding: 10px;
+            text-align: left;
+            background-image: url('https://buildhr.co.in/wp-content/uploads/2018/04/contactus.jpg');
+            background-repeat: no-repeat;
+
+            background-size: 100% 100%;
+        }
+
+        form {
+            border: 2px var(--main-theme-transparent-color) solid;
+            margin: 0px 800px 0px 0px;
+            text-align: center;
+            background-color: var(--main-theme-transparent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="outer-container">
+            <div class="inner-container">
+                <div class="video-overlay">
+                    <table>
+                        <tr>
+                            <td><a href="index.html">Home</a></td>
+                            <td>
+                                <a href="aboutme.html">About Me</a>
+                            </td>
+                            <td>
+                                <a href="portfolio.html">Portfolio</a>
+                            </td>
+                            <td id="selected-menu">
+                                <a href="contact.html">Contact Me</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- The video -->
+                <video autoplay muted loop id="videobg">
+                    <source src="/Media/welcome.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <h3 style="text-align: center;  font-size: 40px;">Contact Information</h3>
+
+    <article>
+        <pre style="font-family: Assistant;">
+    Please enter your details in the form below. Along with your suggestion or query. 
+    Any feedback is highly appriciated and you will be contacted soon in case of query.
+    Thank You.!
+        </pre>
+        <form action="https://formspree.io/f/xwkwglvl" method="POST" id="myForm">
+            <!-- Form action from formspree.io-->
+
+            <fieldset>
+                <!-- OR Section to group the fields in form-->
+                <legend>Personal Info</legend>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="countries_dropdown">Country</label>
+                    <select id="countries_dropdown">
+                        <option value="" selected>Select a Country</option>
+                        <option value="IN">India</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <!-- OR Section to group the fields in form-->
+                <legend>Query/Suggestion/Feedback</legend>
+                <div class="form-group">
+                    <label for="desc">Details</label>
+                    <textarea id="desc" type="textarea" name="desc" rows="4" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset style=" border: 0;  text-align: left;">
+                <input style="width:20px;" type="checkbox" id="receive">
+                <label for="receive" style="display: inline;">I want to receive the copy of above mentioned
+                    details.</label>
+                <br />
+            </fieldset>
+
+            <input class="form_button" id="sendBtn" type="submit" value="Send" onclick="call()">
+
+
+    </article>
+    <footer>
+        <div>
+            <table>
+                <tr>
+
+                    <td class="social-icons">
+                        <img style="height: 40px; object-fit: cover;" src="/Media/imageedit_7_3425080704.png" />
+                    </td>
+                    <td class="copyright">
+                        <p> © 2021, Created by Aditi Parikh, Student ID-95991 </p>
+                    </td>
+
+                    <td class="social-icons">
+                        <a href="https://www.facebook.com/aditi.parikh.7/" target="new" title="Facebook image">
+                            <img class="default"
+                                src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png" />
+
+                        </a>
+                    </td>
+                    <td class="social-icons">
+                        <a href="https://www.linkedin.com/in/aditi-parikh/" target="new" title="Linkedin image">
+                            <img class="default"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-MaOt0RuBmQzuKc59hTxuS_mtXPmIxghdOA&usqp=CAU" />
+
+                        </a>
+                    </td>
+                    <td class="social-icons">
+                        <a href="tel:4089308022" title="Whatsapp image">
+                            <img class="default"
+                                src="https://www.iconpacks.net/icons/1/free-whatsapp-icon-121-thumb.png" />
+
+                        </a>
+                    </td>
+                    <td class="social-icons">
+                        <a href="mailto:parikhaditi3453@students.itu.edu?subject=Hello from HTML&body=Hello in Body"
+                            title="Email image">
+                            <img class="default" src="https://image.flaticon.com/icons/png/512/8/8807.png" />
+
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+    <script src="/JS/script.js" />
+</body>
+
+</html>
